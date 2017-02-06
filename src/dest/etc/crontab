@@ -1,0 +1,11 @@
+SHELL=/bin/sh
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=
+HOME=/
+
+# run-parts
+#01 * * * * root run-parts /mnt/DroboFS/Shares/DroboApps/cronie/etc/cron.hourly
+#02 4 * * * root run-parts /mnt/DroboFS/Shares/DroboApps/cronie/etc/cron.daily
+#22 4 * * 0 root run-parts /mnt/DroboFS/Shares/DroboApps/cronie/etc/cron.weekly
+#42 4 1 * * root run-parts /mnt/DroboFS/Shares/DroboApps/cronie/etc/cron.monthly
+
