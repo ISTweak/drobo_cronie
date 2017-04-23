@@ -3,10 +3,10 @@ _build_cronie() {
 local VERSION="1.4.12"
 local FOLDER="cronie${VERSION}"
 local FILE="${FOLDER}.tar.gz"
-local URL="https://git.fedorahosted.org/cgit/cronie.git/snapshot/${FILE}"
+local URL="https://github.com/cronie-crond/cronie/archive/${FILE}"
 
 _download_tgz "${FILE}" "${URL}" "${FOLDER}"
-pushd "target/${FOLDER}"
+pushd "target/cronie-${FOLDER}"
 
 #autoconf
 autoreconf --install
